@@ -1,9 +1,11 @@
+import ContentTabs from '../ContentTabs/ContentTabs'
+
 interface ContentSectionProps {
   
 }
 
 const ContentSection = (props:ContentSectionProps) => (
-  <section className="my-30 mx-9">
+  <section className="my-30 mx-5 space-y-8">
     <div className="px-4 space-y-5">
       <h1 className="text-3xl text-center font-medium">
         Features
@@ -17,7 +19,7 @@ const ContentSection = (props:ContentSectionProps) => (
       </p>
     </div>
 
-    
+    <ContentTabs/>
   </section>
 );
 
