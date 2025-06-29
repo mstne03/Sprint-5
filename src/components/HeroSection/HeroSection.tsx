@@ -5,7 +5,7 @@ interface HeroSectionProps {
 }
 
 const HeroSection = (props: HeroSectionProps) => (
-  <main className="mx-7 flex flex-col justify-between space-y-70">
+  <section className="mx-7 flex flex-col justify-between space-y-70">
     <div className="relative">
       <div className="
               after:content-['']
@@ -46,7 +46,7 @@ const HeroSection = (props: HeroSectionProps) => (
         <ButtonComponent text="Get it on Firefox" bg_color="bg-gray-100" text_color="text-gray-700"/>
       </span>
     </div>
-  </main>
+  </section>
 );
 
 export default HeroSection;
