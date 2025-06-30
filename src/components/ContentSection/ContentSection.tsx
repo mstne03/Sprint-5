@@ -1,4 +1,5 @@
 import ContentTabs from '../ContentTabs/ContentTabs'
+import ContentSectionPages from '../ContentSectionPages/ContentSectionPages'
 
 interface ContentSectionProps {
   
@@ -20,6 +21,8 @@ const ContentSection = (props:ContentSectionProps) => (
     </div>
 
     <ContentTabs/>
+
+    <ContentSectionPages/>
   </section>
 );
 
