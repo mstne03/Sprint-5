@@ -1,11 +1,15 @@
+import DownloadCard from './DownloadCard/DownloadCard'
+
 interface DownloadSectionProps {
-  
+
 }
 
 const DownloadSection = (props:DownloadSectionProps) => (
-  <div>
+  <section>
     DownloadSection Component
-  </div>
+
+    <DownloadCard/>
+  </section>
 );
 
 export default DownloadSection;
