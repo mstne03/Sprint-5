@@ -1,13 +1,12 @@
-import ButtonComponent from '../ButtonComponent/ButtonComponent'
+import ButtonComponent from '../../ButtonComponent/ButtonComponent'
 import { useState } from 'react'
 
 interface ContentTabsProps {
-  
+  superState:number,
+  setPageState: (state:number) => void
 }
 
 const ContentTabs = (props:ContentTabsProps) => {
-  const [state, setState] = useState(0)
-
   return (
     <div className="flex flex-col justify-center mx-2">
       <div className="flex flex-col justify-center border-y-1 border-y-gray-400">
@@ -20,8 +19,8 @@ const ContentTabs = (props:ContentTabsProps) => {
             shadow = ""
             isTab = {true}
             state = {0}
-            pageState = {state}
-            stateSet = {setState}
+            pageState = {props.superState}
+            stateSet = {props.setPageState}
           />
         </span>
       </div>
@@ -36,8 +35,8 @@ const ContentTabs = (props:ContentTabsProps) => {
             shadow = ""
             isTab = {true}
             state = {1}
-            pageState = {state}
-            stateSet = {setState}
+            pageState = {props.superState}
+            stateSet = {props.setPageState}
           />
         </span>
       </div>
@@ -52,8 +51,8 @@ const ContentTabs = (props:ContentTabsProps) => {
             shadow = ""
             isTab = {true}
             state = {2}
-            pageState = {state}
-            stateSet = {setState}
+            pageState = {props.superState}
+            stateSet = {props.setPageState}
           />
         </span>
       </div>

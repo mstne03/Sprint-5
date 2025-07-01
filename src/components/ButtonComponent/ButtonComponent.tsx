@@ -10,17 +10,7 @@ interface ButtonComponentProps {
   stateSet?: (value : number) => void
 }
 
-const ButtonComponent = ({
-  text, 
-  bg_color, 
-  text_color, 
-  borders = "border-2 border-transparent",
-  shadow = "shadow-lg",
-  isTab,
-  state,
-  pageState,
-  stateSet
-}: ButtonComponentProps) => (
+const ButtonComponent = (props: ButtonComponentProps) => (
   <button className={`
             cursor-pointer
             rounded-lg
@@ -28,23 +18,23 @@ const ButtonComponent = ({
             px-4.5
             py-3.5
             w-auto
-            ${shadow}
-            ${bg_color} 
-            ${text_color}
-            ${borders}
-            ${isTab ? "border-b-7" : ""}
-            ${(pageState === state) && isTab ?
+            ${props.shadow}
+            ${props.bg_color} 
+            ${props.text_color}
+            ${props.borders}
+            ${props.isTab ? "border-b-8" : ""}
+            ${(props.pageState === props.state) && props.isTab ?
               "border-b-red-500" :
               ""
             }
             `}
           onClick = { () => {
-            if (stateSet != undefined) {
-              stateSet(state as number)
+            if (props.stateSet != undefined) {
+              props.stateSet(props.state as number)
             }
           }}
   >
-    {text}
+    {props.text}
   </button>
 );
 
