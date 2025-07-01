@@ -22,7 +22,7 @@ const HeroSection = () => (
       </div>
 
       <span className="flex justify-center items-center gap-3">
-        <ButtonComponent text="Get it on Chrome" bg_color="bg-blue-500" text_color="text-white"/>
+        <ButtonComponent text="Get it on Chrome" text_color="text-white"/>
         
         <ButtonComponent text="Get it on Firefox" bg_color="bg-gray-100" text_color="text-gray-700"/>
       </span>

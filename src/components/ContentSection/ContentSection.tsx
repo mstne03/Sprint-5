@@ -4,7 +4,6 @@ import ContentSectionPages from './ContentSectionPages/ContentSectionPages'
 import contentImage1 from '../../assets/Imagenes/illustration-features-tab-1.svg'
 import contentImage2 from '../../assets/Imagenes/illustration-features-tab-2.svg'
 import contentImage3 from '../../assets/Imagenes/illustration-features-tab-3.svg'
-import ButtonComponent from '../ButtonComponent/ButtonComponent'
 
 const ContentSection = () => {
   const [state, setState] = useState(0);

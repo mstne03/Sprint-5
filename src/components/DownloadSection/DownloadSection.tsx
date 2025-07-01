@@ -2,16 +2,13 @@ import DownloadCard from './DownloadCard/DownloadCard'
 import googleImg from '../../assets/Imagenes/logo-chrome.svg'
 import firefoxImg from '../../assets/Imagenes/logo-firefox.svg'
 import operaImg from '../../assets/Imagenes/logo-opera.svg'
+import BgDots from '../../assets/Imagenes/bg-dots.svg'
 
-interface DownloadSectionProps {
-
-}
-
-const DownloadSection = (props:DownloadSectionProps) => {
+const DownloadSection = () => {
   const cards = [
-    {key: 0, src: googleImg},
-    {key: 1, src: firefoxImg},
-    {key: 2, src: operaImg}
+    {key: 0, src: googleImg, title:"Add to Chrome", text:"Minimum version 62"},
+    {key: 1, src: firefoxImg, title: "Add to Firefox", text: "Minimum version 55"},
+    {key: 2, src: operaImg, title: "Add to Opera", text: "Minimum version 46"}
   ]
 
   return (
@@ -21,19 +18,22 @@ const DownloadSection = (props:DownloadSectionProps) => {
           Download the extension
         </h1>
 
-        <p className="mx-4 text-center text-gray-400">
+        <p className="mx-8 text-center text-gray-400">
           We've got more browsers in the pipeline.
           Please let us know if you've got a favourite
           you'd like us to prioritize.
         </p>
       </div>
 
-      <div className="flex flex-col justify-center items-center gap-20">
+      <div className="mx-10 flex flex-col justify-center items-center gap-20">
         {cards.map((card) => {
           return (
             <DownloadCard 
               key={card.key}
               imgSrc={card.src}
+              separator={BgDots}
+              title={card.title}
+              text={card.text}
             />
           )
         })}
