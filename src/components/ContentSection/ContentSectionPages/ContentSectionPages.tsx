@@ -34,7 +34,7 @@ const ContentSectionPages = ({
       </p>
 
       <div className="flex justify-center mt-7">
-        <ButtonComponent text="More info" bg_color="bg-blue-500" text_color="text-white"/>
+        <ButtonComponent text="More info" bg_color="bg-blue-500" textColor="text-white"/>
       </div>
     </div>
   </div>

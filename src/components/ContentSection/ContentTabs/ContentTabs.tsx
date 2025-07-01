@@ -13,7 +13,7 @@ const ContentTabs = (props:ContentTabsProps) => {
           <ButtonComponent
             text="Simple Bookmarking"
             bg_color="bg-transparent"
-            text_color=""
+            textColor=""
             borders = "border-2 border-transparent border-b-2 border-b-red"
             shadow = ""
             isTab = {true}
@@ -29,7 +29,7 @@ const ContentTabs = (props:ContentTabsProps) => {
           <ButtonComponent 
             text="Speedy Searching"
             bg_color="bg-transparent"
-            text_color=""
+            textColor=""
             borders = "border-2 border-transparent border-b-2 border-b-red"
             shadow = ""
             isTab = {true}
@@ -45,7 +45,7 @@ const ContentTabs = (props:ContentTabsProps) => {
           <ButtonComponent 
             text="Easy Sharing"
             bg_color="bg-transparent"
-            text_color=""
+            textColor=""
             borders = "border-2 border-transparent border-b-2 border-b-red"
             shadow = ""
             isTab = {true}

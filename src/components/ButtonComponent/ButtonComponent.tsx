@@ -1,7 +1,7 @@
 interface ButtonComponentProps {
   text:string,
   bg_color?:string,
-  text_color:string,
+  textColor:string,
   paddingX?:string,
   paddingY?:string,
   borders?:string,
@@ -15,7 +15,7 @@ interface ButtonComponentProps {
 const ButtonComponent = ({
   text,
   bg_color = "bg-blue-500",
-  text_color,
+  textColor,
   paddingX = "px-4.5",
   paddingY = "py-3.5",
   borders,
@@ -34,7 +34,7 @@ const ButtonComponent = ({
             ${paddingY}
             ${shadow}
             ${bg_color} 
-            ${text_color}
+            ${textColor}
             ${borders}
             ${isTab ? "border-b-7" : ""}
             ${

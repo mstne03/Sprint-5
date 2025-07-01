@@ -31,7 +31,7 @@ const DownloadCard = (props:DownloadCardProps) => (
       <ButtonComponent 
         text="Add & Install Extension" 
         bg_color="bg-blue-500" 
-        text_color="text-white" 
+        textColor="text-white" 
         shadow="shadow-lg"
         paddingX="px-9"
       />

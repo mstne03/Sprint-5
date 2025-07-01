@@ -208,9 +208,6 @@
   .mt-7 {
     margin-top: calc(var(--spacing) * 7);
   }
-  .mt-30 {
-    margin-top: calc(var(--spacing) * 30);
-  }
   .flex {
     display: flex;
   }
@@ -361,8 +358,8 @@
   .px-1 {
     padding-inline: calc(var(--spacing) * 1);
   }
-  .px-2 {
-    padding-inline: calc(var(--spacing) * 2);
+  .px-3 {
+    padding-inline: calc(var(--spacing) * 3);
   }
   .px-3 {
     padding-inline: calc(var(--spacing) * 3);
