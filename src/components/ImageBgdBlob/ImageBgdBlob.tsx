@@ -19,8 +19,10 @@ const ImgBgdBlob = ({
       after:bg-blue-500
       after:rounded-full
       after:-z-10
-      after:w-dvw
+      after:w-200
+      after:sm:w-300
       after:h-45
+      after:sm:h-72
       ${blobYDirection}
       ${blobXDirection}
     `}
@@ -28,7 +30,15 @@ const ImgBgdBlob = ({
       <img
         src={imgSrc}
         alt="hero-image"
-        className={`object-contain z-10 absolute right-3 ${imageYDirection}`}
+        className={`
+          object-contain 
+          z-10 
+          absolute 
+          right-3 
+          sm:max-w-[500px]
+          md:max-w-none
+          ${imageYDirection}
+        `}
       />
     </div>
   </div>

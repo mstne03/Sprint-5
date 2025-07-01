@@ -4,7 +4,7 @@ import Image from '../../assets/Imagenes/illustration-hero.svg'
 import TextTemplate from '../TextTemplate/TextTemplate'
 
 const HeroSection = () => (
-  <section className="mx-7 flex flex-col justify-between space-y-70">
+  <section className="mx-7 md:mx-20 lg:mx-32 flex flex-col justify-between space-y-70 md:flex-row-reverse md:gap-96">
     <ImageBgdBlob 
       imgSrc={Image}
     />
@@ -20,9 +20,10 @@ const HeroSection = () => (
         "
         titleSize="text-3xl"
         spaceY="space-y-5"
+        textFlow="text-center md:text-left"
       />
 
-      <div className="flex justify-center items-center gap-3">
+      <div className="flex justify-center md:justify-start items-center gap-3">
         <ButtonComponent text="Get it on Chrome" textColor="text-white"/>
         
         <ButtonComponent text="Get it on Firefox" bg_color="bg-gray-100" textColor="text-gray-700"/>

@@ -5,7 +5,8 @@ interface TextTemplateProps {
   titleSize?:string,
   titlePadding?:string,
   content:string,
-  contentSize?:string
+  contentSize?:string,
+  textFlow?:string
 }
 
 const TextTemplate = ({
@@ -15,7 +16,8 @@ const TextTemplate = ({
   titleSize = "text-2xl",
   titlePadding = "",
   content,
-  contentSize = ""
+  contentSize = "",
+  textFlow = "text-center"
 }:TextTemplateProps) => (
     <div className={`
           ${paddingX} 
@@ -25,7 +27,7 @@ const TextTemplate = ({
       <h1 className={`
             ${titleSize}
             ${titlePadding}
-            text-center 
+            ${textFlow} 
             font-medium
           `}
       >
@@ -34,7 +36,7 @@ const TextTemplate = ({
 
       <p className={`
           ${contentSize}
-          text-center 
+          ${textFlow} 
           text-gray-400
         `}
       >
