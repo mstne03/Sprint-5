@@ -1,3 +1,5 @@
+import ButtonComponent from '../../ButtonComponent/ButtonComponent'
+
 interface DownloadCardProps {
   
 }
