@@ -6,7 +6,7 @@ interface HeaderSectionProps {
 }
 
 const HeaderSection = (props: HeaderSectionProps) => (
-  <header className="flex justify-between items-center py-12 px-10 md:px-20">
+  <header className="flex justify-between items-center sm:gap-20 py-12 px-10 md:px-20 lg:px-32">
     <span>
       <img 
         className="object-contain max-w-35 sm:min-w-40"
@@ -15,14 +15,14 @@ const HeaderSection = (props: HeaderSectionProps) => (
       />
     </span>
 
-    <span className="sm:hidden">
+    <span className="md:hidden">
       <img 
         src={props.menuImg} 
         alt="hamburger_icon" 
       />
     </span>
 
-    <nav className="hidden sm:flex sm:justify-center sm:items-center sm:gap-5">
+    <nav className="hidden md:flex md:justify-center md:items-center md:gap-10">
       <ul className="flex gap-6">
         <li>
           <a href="#">FEATURES</a>
