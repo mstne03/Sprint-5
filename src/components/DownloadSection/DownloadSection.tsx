@@ -15,7 +15,7 @@ const DownloadSection = (props:DownloadSectionProps) => {
   ]
 
   return (
-    <div className="space-y-15">
+    <section className="space-y-15">
       <div className="px-4 space-y-4">
         <h1 className="text-2xl text-center font-medium">
           Download the extension
@@ -28,15 +28,17 @@ const DownloadSection = (props:DownloadSectionProps) => {
         </p>
       </div>
 
-      <div>
+      <div className="flex flex-col justify-center items-center gap-20">
         {cards.map((card) => {
-          return <DownloadCard 
-                  key={card.key}
-                  imgSrc={card.src}
-                />;
+          return (
+            <DownloadCard 
+              key={card.key}
+              imgSrc={card.src}
+            />
+          )
         })}
       </div>
-    </div>
+    </section>
   )
 };
 

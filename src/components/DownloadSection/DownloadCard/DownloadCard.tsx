@@ -7,7 +7,7 @@ interface DownloadCardProps {
 const DownloadCard = (props:DownloadCardProps) => (
   <div>
     <span>
-      <img src={props.imgSrc} alt="card_image" />
+      <img src={props.imgSrc} alt="card_image"/>
     </span>
   </div>
 );

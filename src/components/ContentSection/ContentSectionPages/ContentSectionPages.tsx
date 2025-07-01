@@ -1,5 +1,5 @@
 import ImageBgdBlob from '../../ImageBgdBlob/ImageBgdBlob' 
-
+import ButtonComponent from '../../ButtonComponent/ButtonComponent'
 interface ContentSectionPagesProps {
   imgSrc:string,
   title:string,
@@ -16,7 +16,7 @@ const ContentSectionPages = ({
   passImageYValue = ""
 }:ContentSectionPagesProps) => (
 
-  <section className="mx-5 flex flex-col justify-between space-y-70">
+  <div className="mx-5 flex flex-col justify-between space-y-70">
     <ImageBgdBlob
       imgSrc = {imgSrc}
       blobXDirection = "after:right-10"
@@ -32,8 +32,12 @@ const ContentSectionPages = ({
       <p className="text-center text-gray-400">
         {content}
       </p>
+
+      <div className="flex justify-center mt-7">
+        <ButtonComponent text="More info" bg_color="bg-blue-500" text_color="text-white"/>
+      </div>
     </div>
-  </section>
+  </div>
 );
 
 export default ContentSectionPages;
