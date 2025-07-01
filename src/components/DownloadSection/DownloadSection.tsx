@@ -25,8 +25,7 @@ const DownloadSection = () => {
       />
 
       <div className="mx-10 flex flex-col justify-center items-center gap-20">
-        {cards.map((card) => {
-          return (
+        {cards.map((card) => 
             <DownloadCard 
               key={card.key}
               imgSrc={card.src}
@@ -35,7 +34,7 @@ const DownloadSection = () => {
               text={card.text}
             />
           )
-        })}
+        }
       </div>
     </section>
   )

@@ -1,4 +1,5 @@
 import ButtonComponent from '../../ButtonComponent/ButtonComponent'
+import TextTemplate from '../../TextTemplate/TextTemplate'
 
 interface DownloadCardProps {
   imgSrc:string,
@@ -12,21 +13,18 @@ const DownloadCard = (props:DownloadCardProps) => (
     <span>
       <img src={props.imgSrc} alt="card_image"/>
     </span>
-    <div className="px-4 space-y-4">
-      <h1 className="text-2xl text-center font-medium">
-        {props.title}
-      </h1>
+    <TextTemplate
+      title={props.title}
+      content={props.text}
+    />
 
-      <p className="text-center text-gray-400">
-        {props.text}
-      </p>
-    </div>
     <div className="w-full">
       <img 
         src={props.separator} 
         alt="bg_dots"
       />
     </div>
+    
     <div>
       <ButtonComponent 
         text="Add & Install Extension" 

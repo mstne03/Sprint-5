@@ -3,6 +3,7 @@ interface TextTemplateProps {
   spaceY?:string,
   title:string,
   titleSize?:string,
+  titlePadding?:string,
   content:string,
   contentSize?:string
 }
@@ -12,6 +13,7 @@ const TextTemplate = ({
   spaceY = "space-y-4",
   title,
   titleSize = "text-2xl",
+  titlePadding = "",
   content,
   contentSize = ""
 }:TextTemplateProps) => (
@@ -22,6 +24,7 @@ const TextTemplate = ({
       >
     <h1 className={`
           ${titleSize}
+          ${titlePadding}
           text-center 
           font-medium
         `}
