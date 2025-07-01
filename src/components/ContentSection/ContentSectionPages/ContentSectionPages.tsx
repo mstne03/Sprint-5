@@ -1,5 +1,6 @@
 import ImageBgdBlob from '../../ImageBgdBlob/ImageBgdBlob' 
 import ButtonComponent from '../../ButtonComponent/ButtonComponent'
+import TextTemplate from '../../TextTemplate/TextTemplate'
 interface ContentSectionPagesProps {
   imgSrc:string,
   title:string,
@@ -25,13 +26,10 @@ const ContentSectionPages = ({
     />
 
     <div className="space-y-4">
-      <h1 className="text-2xl text-center font-medium">
-        {title}
-      </h1>
-
-      <p className="text-center text-gray-400">
-        {content}
-      </p>
+      <TextTemplate
+        title={title}
+        content={content}
+      />
 
       <div className="flex justify-center mt-7">
         <ButtonComponent text="More info" bg_color="bg-blue-500" textColor="text-white"/>
