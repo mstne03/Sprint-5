@@ -19,7 +19,7 @@ const ImgBgdBlob = ({
       after:bg-blue-500
       after:rounded-full
       after:-z-10
-      after:w-100
+      after:w-dvw
       after:h-45
       ${blobYDirection}
       ${blobXDirection}
