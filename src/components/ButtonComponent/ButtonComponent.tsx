@@ -13,7 +13,7 @@ interface ButtonComponentProps {
 const ButtonComponent = (props: ButtonComponentProps) => (
   <button className={`
             cursor-pointer
-            rounded-lg
+            rounded-md
             font-medium 
             px-4.5
             py-3.5
@@ -22,7 +22,7 @@ const ButtonComponent = (props: ButtonComponentProps) => (
             ${props.bg_color} 
             ${props.text_color}
             ${props.borders}
-            ${props.isTab ? "border-b-8" : ""}
+            ${props.isTab ? "border-b-7" : ""}
             ${(props.pageState === props.state) && props.isTab ?
               "border-b-red-500" :
               ""

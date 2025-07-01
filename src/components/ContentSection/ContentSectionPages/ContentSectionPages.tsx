@@ -1,3 +1,5 @@
+import ImageBgdBlob from '../../ImageBgdBlob/ImageBgdBlob' 
+
 interface ContentSectionPagesProps {
   imgSrc:string,
   title:string,
@@ -5,16 +7,17 @@ interface ContentSectionPagesProps {
 }
 
 const ContentSectionPages = (props:ContentSectionPagesProps) => (
-  <section>
-    <span>
-      <img 
-        src={props.imgSrc} 
-        alt="content_image"
-      />
-    </span>
+  <section className="mx-7 flex flex-col justify-between space-y-70">
+    <ImageBgdBlob
+      imgSrc = {props.imgSrc}
+    />
 
-    <div>
-      
+    <div className="space-y-9">
+      <h1 className="text-2xl text-center font-medium">
+        {props.title}
+      </h1>
+
+
     </div>
   </section>
 );

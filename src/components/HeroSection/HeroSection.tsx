@@ -1,31 +1,12 @@
 import ButtonComponent from '../ButtonComponent/ButtonComponent'
+import ImageBgdBlob from '../ImageBgdBlob/ImageBgdBlob'
+import Image from '../../assets/Imagenes/illustration-hero.svg'
 
-interface HeroSectionProps {
-  imgSrc: string
-}
-
-const HeroSection = (props: HeroSectionProps) => (
+const HeroSection = () => (
   <section className="mx-7 flex flex-col justify-between space-y-70">
-    <div className="relative">
-      <div className="
-              after:content-['']
-              after:absolute
-              after:bg-blue-500
-              after:rounded-full
-              after:-z-10
-              after:w-100
-              after:h-45
-              after:top-14
-              after:left-10
-            "
-      >
-        <img
-          src={props.imgSrc}
-          alt="hero-image"
-          className="object-contain z-10 absolute right-3"
-        />
-      </div>
-    </div>
+    <ImageBgdBlob 
+      imgSrc={Image}
+    />
 
     <div className="space-y-9">
       <div className="px-4 space-y-5">

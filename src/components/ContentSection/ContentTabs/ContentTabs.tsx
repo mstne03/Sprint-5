@@ -1,5 +1,4 @@
 import ButtonComponent from '../../ButtonComponent/ButtonComponent'
-import { useState } from 'react'
 
 interface ContentTabsProps {
   superState:number,
