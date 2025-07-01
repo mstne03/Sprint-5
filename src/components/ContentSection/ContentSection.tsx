@@ -4,6 +4,7 @@ import ContentSectionPages from './ContentSectionPages/ContentSectionPages'
 import contentImage1 from '../../assets/Imagenes/illustration-features-tab-1.svg'
 import contentImage2 from '../../assets/Imagenes/illustration-features-tab-2.svg'
 import contentImage3 from '../../assets/Imagenes/illustration-features-tab-3.svg'
+import ButtonComponent from '../ButtonComponent/ButtonComponent'
 
 const ContentSection = () => {
   const [state, setState] = useState(0);
@@ -47,7 +48,7 @@ const ContentSection = () => {
   const activePage = content.find(page => page.key === state);
 
   return (
-    <section className="my-30 mx-5 space-y-15">
+    <section className="my-30 mx-5 space-y-9">
       <div className="px-4 space-y-4">
         <h1 className="text-2xl text-center font-medium">
           Features
@@ -73,6 +74,10 @@ const ContentSection = () => {
           passImageYValue = {activePage.key != 0 ? "top-[-30px]" : ""}
         />
       )}
+
+      <div className="flex justify-center">
+        <ButtonComponent text="More info" bg_color="bg-blue-500" text_color="text-white"/>
+      </div>
     </section>
   )
 };
