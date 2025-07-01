@@ -24,7 +24,7 @@ const ContentTabs = (props:ContentTabsProps) => {
         </span>
       </div>
 
-      <div className="flex flex-col justify-center border-y-1 border-y-gray-400">
+      <div className="flex flex-col justify-center">
         <span className="flex justify-center">
           <ButtonComponent 
             text="Speedy Searching"

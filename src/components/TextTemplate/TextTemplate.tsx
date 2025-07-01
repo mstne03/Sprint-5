@@ -17,30 +17,30 @@ const TextTemplate = ({
   content,
   contentSize = ""
 }:TextTemplateProps) => (
-  <div className={`
-        ${paddingX} 
-        ${spaceY}
+    <div className={`
+          ${paddingX} 
+          ${spaceY}
+          `}
+        >
+      <h1 className={`
+            ${titleSize}
+            ${titlePadding}
+            text-center 
+            font-medium
+          `}
+      >
+        {title}
+      </h1>
+
+      <p className={`
+          ${contentSize}
+          text-center 
+          text-gray-400
         `}
       >
-    <h1 className={`
-          ${titleSize}
-          ${titlePadding}
-          text-center 
-          font-medium
-        `}
-    >
-      {title}
-    </h1>
-
-    <p className={`
-        ${contentSize}
-        text-center 
-        text-gray-400
-      `}
-    >
-      {content}
-    </p>
-  </div>
-);
+        {content}
+      </p>
+    </div>
+  );
 
 export default TextTemplate;
