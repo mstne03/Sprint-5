@@ -23,9 +23,9 @@ const HeroSection = () => (
       />
 
       <div className="flex justify-center items-center gap-3">
-        <ButtonComponent text="Get it on Chrome" text_color="text-white"/>
+        <ButtonComponent text="Get it on Chrome" textColor="text-white"/>
         
-        <ButtonComponent text="Get it on Firefox" bg_color="bg-gray-100" text_color="text-gray-700"/>
+        <ButtonComponent text="Get it on Firefox" bg_color="bg-gray-100" textColor="text-gray-700"/>
       </div>
     </div>
   </section>
