@@ -1,13 +1,15 @@
 interface ImgBgdBlobProps {
   imgSrc:string,
   blobXDirection?:string,
-  blobYDirection?:string
+  blobYDirection?:string,
+  imageYDirection?:string
 }
 
 const ImgBgdBlob = ({
     imgSrc,
     blobXDirection = "after:left-10",
-    blobYDirection = "after:top-14"
+    blobYDirection = "after:top-14",
+    imageYDirection = ""
 }:ImgBgdBlobProps) => (
 
   <div className="relative">
@@ -26,7 +28,7 @@ const ImgBgdBlob = ({
       <img
         src={imgSrc}
         alt="hero-image"
-        className="object-contain z-10 absolute right-3"
+        className={`object-contain z-10 absolute right-3 ${imageYDirection}`}
       />
     </div>
   </div>

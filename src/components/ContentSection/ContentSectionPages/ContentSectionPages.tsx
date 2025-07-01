@@ -4,23 +4,33 @@ interface ContentSectionPagesProps {
   imgSrc:string,
   title:string,
   content:string,
+  passBlobYValue?:string,
+  passImageYValue?:string
 }
 
-const ContentSectionPages = (props:ContentSectionPagesProps) => (
-  <section className="mx-7 flex flex-col justify-between space-y-70">
+const ContentSectionPages = ({
+  imgSrc,
+  title,
+  content,
+  passBlobYValue,
+  passImageYValue = ""
+}:ContentSectionPagesProps) => (
+
+  <section className="mx-5 flex flex-col justify-between space-y-70">
     <ImageBgdBlob
-      imgSrc = {props.imgSrc}
+      imgSrc = {imgSrc}
       blobXDirection = "after:right-10"
-      blobYDirection = "after:top-11"
+      blobYDirection = {passBlobYValue}
+      imageYDirection = {passImageYValue}
     />
 
-    <div className="space-y-9">
+    <div className="space-y-4">
       <h1 className="text-2xl text-center font-medium">
-        {props.title}
+        {title}
       </h1>
 
       <p className="text-center text-gray-400">
-        {props.content}
+        {content}
       </p>
     </div>
   </section>

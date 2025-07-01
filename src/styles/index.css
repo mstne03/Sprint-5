@@ -180,17 +180,62 @@
   .relative {
     position: relative;
   }
+  .top-2 {
+    top: calc(var(--spacing) * 2);
+  }
+  .top-4 {
+    top: calc(var(--spacing) * 4);
+  }
   .top-12 {
     top: calc(var(--spacing) * 12);
   }
   .top-14 {
     top: calc(var(--spacing) * 14);
   }
+  .top-\[-3px\] {
+    top: -3px;
+  }
+  .top-\[-4px\] {
+    top: -4px;
+  }
+  .top-\[-5px\] {
+    top: -5px;
+  }
+  .top-\[-20px\] {
+    top: -20px;
+  }
+  .top-\[-23px\] {
+    top: -23px;
+  }
+  .top-\[-25px\] {
+    top: -25px;
+  }
+  .top-\[-30px\] {
+    top: -30px;
+  }
   .right-3 {
     right: calc(var(--spacing) * 3);
   }
   .right-10 {
     right: calc(var(--spacing) * 10);
+  }
+  .bottom-1 {
+    bottom: calc(var(--spacing) * 1);
+  }
+  .bottom-2 {
+    bottom: calc(var(--spacing) * 2);
+  }
+  .bottom-10 {
+    bottom: calc(var(--spacing) * 10);
+  }
+  .bottom-\[\.1px\] {
+    bottom: .1px;
+  }
+  .bottom-\[2px\] {
+    bottom: 2px;
+  }
+  .bottom-\[5px\] {
+    bottom: 5px;
   }
   .left-10 {
     left: calc(var(--spacing) * 10);
@@ -203,6 +248,9 @@
   }
   .mx-5 {
     margin-inline: calc(var(--spacing) * 5);
+  }
+  .mx-6 {
+    margin-inline: calc(var(--spacing) * 6);
   }
   .mx-7 {
     margin-inline: calc(var(--spacing) * 7);
@@ -261,6 +309,13 @@
       --tw-space-y-reverse: 0;
       margin-block-start: calc(calc(var(--spacing) * 5) * var(--tw-space-y-reverse));
       margin-block-end: calc(calc(var(--spacing) * 5) * calc(1 - var(--tw-space-y-reverse)));
+    }
+  }
+  .space-y-7 {
+    :where(& > :not(:last-child)) {
+      --tw-space-y-reverse: 0;
+      margin-block-start: calc(calc(var(--spacing) * 7) * var(--tw-space-y-reverse));
+      margin-block-end: calc(calc(var(--spacing) * 7) * calc(1 - var(--tw-space-y-reverse)));
     }
   }
   .space-y-9 {
@@ -396,6 +451,18 @@
       position: absolute;
     }
   }
+  .after\:top-0 {
+    &::after {
+      content: var(--tw-content);
+      top: calc(var(--spacing) * 0);
+    }
+  }
+  .after\:top-3 {
+    &::after {
+      content: var(--tw-content);
+      top: calc(var(--spacing) * 3);
+    }
+  }
   .after\:top-9 {
     &::after {
       content: var(--tw-content);
@@ -424,6 +491,24 @@
     &::after {
       content: var(--tw-content);
       top: calc(var(--spacing) * 14);
+    }
+  }
+  .after\:top-15 {
+    &::after {
+      content: var(--tw-content);
+      top: calc(var(--spacing) * 15);
+    }
+  }
+  .after\:top-20 {
+    &::after {
+      content: var(--tw-content);
+      top: calc(var(--spacing) * 20);
+    }
+  }
+  .after\:top-25 {
+    &::after {
+      content: var(--tw-content);
+      top: calc(var(--spacing) * 25);
     }
   }
   .after\:right-10 {

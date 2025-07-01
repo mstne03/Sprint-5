@@ -69,6 +69,8 @@ const ContentSection = () => {
           imgSrc={activePage.imgSrc}
           title={activePage.title}
           content={activePage.content}
+          passBlobYValue = {activePage.key === 0 ? "after:top-11" : "after:top-15"}
+          passImageYValue = {activePage.key != 0 ? "top-[-30px]" : ""}
         />
       )}
     </section>
