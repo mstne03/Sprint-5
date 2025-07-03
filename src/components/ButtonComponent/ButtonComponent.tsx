@@ -16,7 +16,7 @@ const ButtonComponent = ({
   text,
   bg_color = "bg-blue-500",
   textColor,
-  paddingX = "px-4.5",
+  paddingX = "px-3.5",
   paddingY = "py-3.5",
   borders,
   shadow,

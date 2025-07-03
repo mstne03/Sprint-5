@@ -17,7 +17,7 @@ const ContentSectionPages = ({
   passImageYValue = ""
 }:ContentSectionPagesProps) => (
 
-  <div className="mx-5 flex flex-col justify-between space-y-70">
+  <div className="mx-5 flex flex-col md:flex-row-reverse space-y-15">
     <ImageBgdBlob
       imgSrc = {imgSrc}
       blobXDirection = "after:right-10"
