@@ -5,11 +5,12 @@ interface DownloadCardProps {
   imgSrc:string,
   separator:string,
   title:string,
-  text:string
+  text:string,
+  tPosition:string,
 }
 
 const DownloadCard = (props:DownloadCardProps) => (
-  <div className="shadow-lg flex flex-col gap-6 justify-center items-center pt-10 pb-7 px-1 rounded-b-2xl">
+  <div className={`${props.tPosition} shadow-lg flex flex-col gap-6 justify-center items-center pt-10 pb-7 px-1 rounded-b-2xl`}>
     <span>
       <img src={props.imgSrc} alt="card_image"/>
     </span>
