@@ -48,9 +48,9 @@ const ContentSection = () => {
   const activePage = content.find(page => page.key === state);
 
   return (
-    <section className="my-30 md:my-20 mx-5 space-y-14 flex flex-col justify-center items-center">
+    <section className="my-30 md:my-25 lg:my-35 mx-5 space-y-14 flex flex-col justify-center items-center">
       <TextTemplate
-        paddingX = "md:px-0 min-w-[360px] max-w-[360px]"
+        paddingX = "px-5 md:px-0 min-w-[360px] max-w-[360px]"
         title="Features"
         content="
           Our aim is to make it quick

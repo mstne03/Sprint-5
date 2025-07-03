@@ -13,9 +13,9 @@ const DownloadSection = () => {
   ]
 
   return (
-    <section className="space-y-15">
+    <section className="md:my-56 lg:my-44 flex flex-col justify-center items-center">
       <TextTemplate
-        paddingX="px-10"
+        paddingX="md:max-w-[360px] md:min-w-[360px]"
         title="Download the extension"
         content="
           We've got more browsers in the pipeline.
@@ -24,7 +24,18 @@ const DownloadSection = () => {
         "
       />
 
-      <div className="mx-10 flex flex-col justify-center items-center gap-20">
+      <div className="
+              mx-10 
+              flex 
+              flex-col 
+              justify-center 
+              items-center 
+              gap-20
+              md:flex-row
+              md:gap-10
+              md:mx-17
+            "
+      >
         {cards.map((card) => 
             <DownloadCard 
               key={card.key}
@@ -32,6 +43,13 @@ const DownloadSection = () => {
               separator={BgDots}
               title={card.title}
               text={card.text}
+              tPosition={
+                card.key === 0 ?
+                "md:mt-0"
+                : card.key === 1 ? 
+                "md:mt-15"
+                : "md:mt-30"
+              }
             />
           )
         }

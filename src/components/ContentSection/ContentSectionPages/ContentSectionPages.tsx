@@ -20,11 +20,11 @@ const ContentSectionPages = ({
           flex 
           flex-col 
           md:flex-row 
-          space-y-15
+          space-y-25
           md:space-y-0
           md:gap-26
           md:justify-center
-          md:items-center
+          sm:items-center
           md:mx-16
           lg:mx-40
         "
