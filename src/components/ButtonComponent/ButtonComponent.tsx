@@ -16,8 +16,8 @@ const ButtonComponent = ({
   text,
   bg_color = "bg-blue-500",
   textColor,
-  paddingX = "px-3.5",
-  paddingY = "py-3.5",
+  paddingX = "",
+  paddingY = "",
   borders,
   shadow,
   isTab = false,
@@ -30,6 +30,7 @@ const ButtonComponent = ({
             rounded-md
             font-medium
             w-auto
+            p-3.5
             ${paddingX}
             ${paddingY}
             ${shadow}

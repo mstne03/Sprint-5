@@ -46,7 +46,7 @@ const HeroSection = () => (
         titleSize="text-3xl"
         spaceY="space-y-5"
         textFlow="text-center md:text-left"
-        titlePadding="lg:me-30"
+        titlePadding="lg:me-27"
         contentSize="lg:pe-22"
       />
 

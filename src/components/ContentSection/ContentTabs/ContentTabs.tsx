@@ -7,8 +7,25 @@ interface ContentTabsProps {
 
 const ContentTabs = (props:ContentTabsProps) => {
   return (
-    <div className="flex flex-col justify-center mx-2">
-      <div className="flex flex-col justify-center border-y-1 border-y-gray-400">
+    <div className="
+              flex 
+              flex-col 
+              md:flex-row 
+              justify-center
+              md:mx-auto
+              mx-2 
+          "
+    >
+      <div className="
+              flex 
+              justify-center 
+              border-y-1 
+              border-y-gray-400
+              md:border-b-1
+              md:border-t-0
+              md:border-b-gray-400
+            "
+      >
         <span className="flex justify-center">
           <ButtonComponent
             text="Simple Bookmarking"
@@ -20,11 +37,20 @@ const ContentTabs = (props:ContentTabsProps) => {
             state = {0}
             pageState = {props.superState}
             stateSet = {props.setPageState}
+            paddingX = "px-10"
+            paddingY = "py-6"
           />
         </span>
       </div>
 
-      <div className="flex flex-col justify-center">
+      <div className="
+              flex 
+              justify-center
+              md:border-b-1
+              md:border-t-0
+              md:border-b-gray-400
+            "
+      >
         <span className="flex justify-center">
           <ButtonComponent 
             text="Speedy Searching"
@@ -36,11 +62,23 @@ const ContentTabs = (props:ContentTabsProps) => {
             state = {1}
             pageState = {props.superState}
             stateSet = {props.setPageState}
+            paddingX = "px-10"
+            paddingY = "py-6"
           />
         </span>
       </div>
 
-      <div className="flex flex-col justify-center border-y-1 border-y-gray-400">
+      <div className="
+              flex 
+              justify-center 
+              border-y-1 
+              border-y-gray-400
+              md:border-y-0
+              md:border-b-1
+              md:border-t-0
+              md:border-b-gray-400
+          "
+      >
         <span className="flex justify-center">
           <ButtonComponent 
             text="Easy Sharing"
@@ -52,6 +90,8 @@ const ContentTabs = (props:ContentTabsProps) => {
             state = {2}
             pageState = {props.superState}
             stateSet = {props.setPageState}
+            paddingX = "px-10"
+            paddingY = "py-6"
           />
         </span>
       </div>

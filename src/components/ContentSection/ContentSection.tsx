@@ -48,12 +48,12 @@ const ContentSection = () => {
   const activePage = content.find(page => page.key === state);
 
   return (
-    <section className="my-30 mx-5 space-y-14">
+    <section className="my-30 md:my-20 mx-5 space-y-14 flex flex-col justify-center items-center">
       <TextTemplate
-        paddingX = "px-4"
+        paddingX = "md:px-0 min-w-[360px] max-w-[360px]"
         title="Features"
         content="
-          Our aim is to make it quick 
+          Our aim is to make it quick
           and easy for you to access your 
           favourite websites. Your bookmarks
           sync between your devices so you
@@ -69,8 +69,11 @@ const ContentSection = () => {
           imgSrc={activePage.imgSrc}
           title={activePage.title}
           content={activePage.content}
-          passBlobYValue = {activePage.key === 0 ? "after:top-11" : "after:top-15"}
-          passImageYValue = {activePage.key != 0 ? "top-[-30px]" : ""}
+          passBlobYValue = {
+            activePage.key === 0 ? 
+            "after:top-11 md:after:top-5 lg:after:top-32" 
+            : "after:top-18 md:after:top-15 lg:after:top-48"
+          }
         />
       )}
     </section>

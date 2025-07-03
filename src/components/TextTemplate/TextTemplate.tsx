@@ -22,6 +22,8 @@ const TextTemplate = ({
     <div className={`
           ${paddingX} 
           ${spaceY}
+          flex
+          flex-col
           `}
         >
       <h1 className={`

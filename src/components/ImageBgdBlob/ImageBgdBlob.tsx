@@ -1,15 +1,15 @@
 interface ImgBgdBlobProps {
   imgSrc:string,
+  blobHeight?:string,
   blobXDirection?:string,
   blobYDirection?:string,
-  imageYDirection?:string
 }
 
 const ImgBgdBlob = ({
     imgSrc,
-    blobXDirection = "after:left-10 after:sm:left-20",
-    blobYDirection = "after:top-14 after:lg:top-32",
-    imageYDirection = ""
+    blobHeight = "after:md:h-64 after:lg:h-72",
+    blobXDirection = "after:left-10 after:sm:left-35",
+    blobYDirection = "after:top-14 after:lg:top-42",
 }:ImgBgdBlobProps) => (
 
   <div className={`
@@ -24,9 +24,8 @@ const ImgBgdBlob = ({
         after:rounded-full
         after:-z-10
         after:w-250
-        after:h-48
-        after:md:h-64
-        after:lg:h-82
+        after:h-48 
+        ${blobHeight}
         ${blobYDirection}
         ${blobXDirection}
       `}
@@ -38,7 +37,6 @@ const ImgBgdBlob = ({
         object-contain  
         max-h-full
         max-w-full
-        ${imageYDirection}
       `}
     />
   </div>

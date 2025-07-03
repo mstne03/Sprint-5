@@ -6,7 +6,6 @@ interface ContentSectionPagesProps {
   title:string,
   content:string,
   passBlobYValue?:string,
-  passImageYValue?:string
 }
 
 const ContentSectionPages = ({
@@ -14,24 +13,39 @@ const ContentSectionPages = ({
   title,
   content,
   passBlobYValue,
-  passImageYValue = ""
 }:ContentSectionPagesProps) => (
 
-  <div className="mx-5 flex flex-col md:flex-row-reverse space-y-15">
-    <ImageBgdBlob
-      imgSrc = {imgSrc}
-      blobXDirection = "after:right-10"
-      blobYDirection = {passBlobYValue}
-      imageYDirection = {passImageYValue}
-    />
+  <div className="
+          mx-5
+          flex 
+          flex-col 
+          md:flex-row 
+          space-y-15
+          md:space-y-0
+          md:gap-26
+          md:justify-center
+          md:items-center
+          md:mx-16
+          lg:mx-40
+        "
+  >
+    <div className="md:flex-1">
+      <ImageBgdBlob
+        imgSrc = {imgSrc}
+        blobXDirection = "after:right-10"
+        blobYDirection = {passBlobYValue}
+        blobHeight = "after:md:h-65"
+      />
+    </div>
 
-    <div className="space-y-4">
+    <div className="space-y-4 md:flex-1">
       <TextTemplate
         title={title}
         content={content}
+        textFlow="text-center md:text-left"
       />
 
-      <div className="flex justify-center mt-7">
+      <div className="flex justify-center mt-7 md:justify-start">
         <ButtonComponent text="More info" bg_color="bg-blue-500" textColor="text-white"/>
       </div>
     </div>
