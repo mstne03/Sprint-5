@@ -6,7 +6,7 @@ interface HeaderSectionProps {
 }
 
 const HeaderSection = (props: HeaderSectionProps) => (
-  <header className="flex justify-between items-center sm:gap-20 py-12 px-10 md:px-20 lg:px-32">
+  <header className="flex justify-between items-center sm:gap-20 py-12 px-10 md:px-16 lg:px-40">
     <span>
       <img 
         className="object-contain max-w-35 sm:min-w-40"

@@ -13,8 +13,8 @@ const HeroSection = () => (
               md:space-y-0
               gap-20
               md:gap-0
-              md:ms-20 
-              lg:ms-32
+              md:ms-16 
+              lg:ms-40
               md:justify-normal
               md:flex-row-reverse
             "
@@ -29,6 +29,7 @@ const HeroSection = () => (
           flex-1/2
           space-y-9 
           mx-7
+          md:max-w-[45%]
           sm:mx-32
           md:mx-0
           md:relative
@@ -45,11 +46,11 @@ const HeroSection = () => (
         titleSize="text-3xl"
         spaceY="space-y-5"
         textFlow="text-center md:text-left"
-        titlePadding="lg:me-62"
-        contentSize="lg:pe-45"
+        titlePadding="lg:me-30"
+        contentSize="lg:pe-22"
       />
 
-      <div className="flex justify-center md:justify-start items-center gap-4 md:absolute">
+      <div className="flex justify-center md:justify-start items-center gap-2">
         <ButtonComponent text="Get it on Chrome" textColor="text-white"/>
         
         <ButtonComponent text="Get it on Firefox" bg_color="bg-gray-100" textColor="text-gray-700"/>

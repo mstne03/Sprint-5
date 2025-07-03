@@ -23,7 +23,7 @@ const ImgBgdBlob = ({
         after:bg-blue-500
         after:rounded-full
         after:-z-10
-        after:w-200
+        after:w-250
         after:h-48
         after:md:h-64
         after:lg:h-82
