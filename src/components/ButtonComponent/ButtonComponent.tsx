@@ -7,6 +7,7 @@ interface ButtonComponentProps {
   borders?:string,
   shadow?:string,
   isTab?:boolean,
+  isLogin?:boolean,
   state?:number,
   pageState?:number,
   stateSet?: (value : number) => void,
@@ -22,6 +23,7 @@ const ButtonComponent = ({
   borders,
   shadow,
   isTab = false,
+  isLogin = false,
   state,
   pageState,
   stateSet,
@@ -33,6 +35,10 @@ const ButtonComponent = ({
             font-medium
             w-auto
             p-3.5
+            border-2
+            border-transparent
+            transition-transform
+            active:scale-[.9]
             ${paddingX}
             ${paddingY}
             ${shadow}
@@ -45,6 +51,8 @@ const ButtonComponent = ({
               "border-b-red-500"
               : ""
             }
+            ${!isTab && !isLogin ? "hover:text-blue-500 hover:bg-white hover:border-blue-500" 
+              : !isTab && isLogin ? "hover:text-red-500 hover:bg-white hover:border-red-500" : ""}
           `}
           onClick = { () => {
             if (stateSet != undefined && isTab) {
