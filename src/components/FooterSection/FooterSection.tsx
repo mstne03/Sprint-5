@@ -1,7 +1,9 @@
 import ButtonComponent from '../ButtonComponent/ButtonComponent'
 
 interface FooterSectionProps {
-
+  srcLogo:string,
+  facebookLogo:string,
+  twitterLogo:string
 }
 
 const FooterSection= (props:FooterSectionProps) => (
@@ -44,6 +46,41 @@ const FooterSection= (props:FooterSectionProps) => (
           }}
         />
       </form>
+    </div>
+
+    <div className="bg-blue-950 px-20 py-8 flex justify-between">
+      <div className="flex gap-9 md:gap-25">
+        <span>
+          <img 
+            src={props.srcLogo} 
+            alt="logo_bookmark"
+          />
+        </span>
+        
+        <nav className="text-white">
+          <ul className="flex md:gap-20 gap-9">
+            <li>
+              <a href="#">FEATURES</a>
+            </li>
+            <li>
+              <a href="#">PRICING</a>
+            </li>
+            <li>
+              <a href="#">CONTACT</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <div className="flex gap-10 items-center">
+        <span>
+          <img src={props.facebookLogo} alt="" />
+        </span>
+
+        <span>
+          <img src={props.twitterLogo} alt="" />
+        </span>
+      </div>
     </div>
   </footer>
 );
