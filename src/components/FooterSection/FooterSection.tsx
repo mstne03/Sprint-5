@@ -40,6 +40,7 @@ const FooterSection= (props:FooterSectionProps) => (
           text="Contact Us"
           textColor="text-white"
           bg_color="bg-red-500"
+          isLogin={true}
           passingFunction={
             () => {
 
@@ -60,13 +61,13 @@ const FooterSection= (props:FooterSectionProps) => (
         <nav className="text-white">
           <ul className="flex md:gap-20 gap-9">
             <li>
-              <a href="#">FEATURES</a>
+              <a className="hover:text-red-500" href="#">FEATURES</a>
             </li>
             <li>
-              <a href="#">PRICING</a>
+              <a className="hover:text-red-500" href="#">PRICING</a>
             </li>
             <li>
-              <a href="#">CONTACT</a>
+              <a className="hover:text-red-500" href="#">CONTACT</a>
             </li>
           </ul>
         </nav>

@@ -25,13 +25,13 @@ const HeaderSection = (props: HeaderSectionProps) => (
     <nav className="hidden md:flex md:justify-center md:items-center md:gap-10">
       <ul className="flex gap-6">
         <li>
-          <a href="#">FEATURES</a>
+          <a className="hover:text-red-500" href="#">FEATURES</a>
         </li>
         <li>
-          <a href="#">PRICING</a>
+          <a className="hover:text-red-500" href="#">PRICING</a>
         </li>
         <li>
-          <a href="#">CONTACT</a>
+          <a className="hover:text-red-500" href="#">CONTACT</a>
         </li>
       </ul>
 
@@ -41,6 +41,7 @@ const HeaderSection = (props: HeaderSectionProps) => (
         bg_color="bg-red-500"
         paddingX="px-7"
         paddingY="py-3"
+        isLogin={true}
       />
     </nav>
   </header>
