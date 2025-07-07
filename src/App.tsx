@@ -6,6 +6,7 @@ import HeroSection from './components/HeroSection/HeroSection'
 import ContentSection from './components/ContentSection/ContentSection'
 import DownloadSection from './components/DownloadSection/DownloadSection'
 import FaqSection from './components/FaqSection/FaqSection'
+import FooterSection from './components/FooterSection/FooterSection'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -24,6 +25,8 @@ function App() {
       <DownloadSection/>
 
       <FaqSection/>
+
+      <FooterSection/>
     </>
   )
 }
