@@ -9,7 +9,8 @@ interface ButtonComponentProps {
   isTab?:boolean,
   state?:number,
   pageState?:number,
-  stateSet?: (value : number) => void
+  stateSet?: (value : number) => void,
+  passingFunction?: (value?:string | number) => void
 }
 
 const ButtonComponent = ({
@@ -23,7 +24,8 @@ const ButtonComponent = ({
   isTab = false,
   state,
   pageState,
-  stateSet
+  stateSet,
+  passingFunction
 }: ButtonComponentProps) => (
   <button className={`
             cursor-pointer
@@ -45,8 +47,10 @@ const ButtonComponent = ({
             }
           `}
           onClick = { () => {
-            if (stateSet != undefined) {
+            if (stateSet != undefined && isTab) {
               stateSet(state as number)
+            } else {
+              passingFunction?.();
             }
           }}
   >

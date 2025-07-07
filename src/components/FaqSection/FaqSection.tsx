@@ -1,4 +1,5 @@
 import TextTemplate from '../TextTemplate/TextTemplate'
+import ButtonComponent from '../ButtonComponent/ButtonComponent'
 import FaqDetails from './FaqDetails/FaqDetails'
 import iconArrow from '../../assets/Imagenes/icon-arrow.svg'
 
@@ -63,6 +64,13 @@ const FaqSection = (props:FaqSectionProps) => {
                             : ""}
                   />
         })}
+
+        <div className="flex justify-center items-center mt-10">
+          <ButtonComponent
+            text="More info"
+            textColor="text-white"
+          />
+        </div>
       </div>
     </section>
   )
