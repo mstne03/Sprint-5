@@ -68,3 +68,19 @@ export default tseslint.config([
   },
 ])
 ```
+# Goals
+- Refactor a CSS + HTML site using React.js + Vite
+- Use tailwindcss
+- Destructuring the website into reusable components using atomic design
+
+# Technologies
+- React.js + Vite
+- Tailwindcss
+
+# Achieved
+- Mobile and desktop stylings
+- Button active states
+
+# Pending
+- Mobile menu
+- Faq active states
