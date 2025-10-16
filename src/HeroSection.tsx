@@ -4,7 +4,7 @@ const HeroSection = () => {
   return (
     <>
       {/* Banner azul */}
-      <section className="bg-[#7B8BC7] py-4 pt-25">
+      <section className="bg-[#7B8BC7] py-4 pt-20">
         <div className="text-center">
           <h2 className="text-white text-lg font-light tracking-wide">
             Centre d'artteràpia i expressió plàstica

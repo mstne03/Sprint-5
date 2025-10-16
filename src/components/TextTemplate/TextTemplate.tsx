@@ -1,47 +1,35 @@
 interface TextTemplateProps {
-  paddingX?:string,
-  spaceY?:string,
   title:string,
-  titleSize?:string,
-  titlePadding?:string,
+  subtitle:string,
   content:string,
-  contentSize?:string,
-  textFlow?:string
 }
 
 const TextTemplate = ({
-  paddingX = "",
-  spaceY = "space-y-4",
   title,
-  titleSize = "text-2xl",
-  titlePadding = "",
+  subtitle,
   content,
-  contentSize = "",
-  textFlow = "text-center"
 }:TextTemplateProps) => (
-    <div className={`
-          ${paddingX} 
-          ${spaceY}
-          flex
-          flex-col
-          `}
-        >
-      <h1 className={`
-            ${titleSize}
-            ${titlePadding}
-            ${textFlow} 
-            font-medium
-          `}
+    <div className="
+      flex 
+      flex-col 
+      text-center 
+      gap-5
+      px-10
+      md:px-30
+    ">
+      <h2
+        className="text-[17px] italic"
       >
+        {subtitle}
+      </h2>
+      <h1 className="
+        font-medium 
+        text-4xl
+      ">
         {title}
       </h1>
 
-      <p className={`
-          ${contentSize}
-          ${textFlow} 
-          text-gray-400
-        `}
-      >
+      <p className="">
         {content}
       </p>
     </div>
